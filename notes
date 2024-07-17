@@ -144,7 +144,7 @@
 --> db.user.find({ gender: "Male", city: "Delhi", skills: "Java" }).count()
 
 50) How many users are from Hyderabad having age greater than 24 and have skill Python,C++
---> db.user.find({ city: "Hyderabad", age: { $gt: 24 }, skills: { $all: ["Python", "C++"] } }).count()
+--> db.user.find({ city: "Hyderabad", age: { $gt: 24 }, skillsS: { $all: ["Python", "C++"] } }).count()
 
 51) How many female users are from Goa having age greater than 24 and have skill Python,C++
 --> db.user.find({gender:"Female",city:"Goa",age:{$gt:24},skills:{$all:["Python","C++"]}})
